@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>多人项目代码格式化 | 个人知识点记录</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.764feb64.css" as="style"><link rel="preload" href="/assets/js/app.bd818ee9.js" as="script"><link rel="preload" href="/assets/js/2.bdbd09e6.js" as="script"><link rel="preload" href="/assets/js/1.62172407.js" as="script"><link rel="preload" href="/assets/js/40.6c2d89b1.js" as="script"><link rel="prefetch" href="/assets/js/10.aff4f391.js"><link rel="prefetch" href="/assets/js/11.982c24c9.js"><link rel="prefetch" href="/assets/js/12.82e9b697.js"><link rel="prefetch" href="/assets/js/13.73e86676.js"><link rel="prefetch" href="/assets/js/14.42991e2a.js"><link rel="prefetch" href="/assets/js/15.c6f8ea5e.js"><link rel="prefetch" href="/assets/js/16.e37df2a1.js"><link rel="prefetch" href="/assets/js/17.1678b209.js"><link rel="prefetch" href="/assets/js/18.87da4873.js"><link rel="prefetch" href="/assets/js/19.0741f0b9.js"><link rel="prefetch" href="/assets/js/20.2822dae5.js"><link rel="prefetch" href="/assets/js/21.60375cff.js"><link rel="prefetch" href="/assets/js/22.2aa7a141.js"><link rel="prefetch" href="/assets/js/23.d83ec41b.js"><link rel="prefetch" href="/assets/js/24.eafcc70f.js"><link rel="prefetch" href="/assets/js/25.3b72b2cf.js"><link rel="prefetch" href="/assets/js/26.7fe6088b.js"><link rel="prefetch" href="/assets/js/27.247bdb89.js"><link rel="prefetch" href="/assets/js/28.5bd5de60.js"><link rel="prefetch" href="/assets/js/29.1e7b15c5.js"><link rel="prefetch" href="/assets/js/3.e8eb28a6.js"><link rel="prefetch" href="/assets/js/30.36372d97.js"><link rel="prefetch" href="/assets/js/31.5bf8ebdc.js"><link rel="prefetch" href="/assets/js/32.3681d741.js"><link rel="prefetch" href="/assets/js/33.a071a532.js"><link rel="prefetch" href="/assets/js/34.5771d7db.js"><link rel="prefetch" href="/assets/js/35.a6778671.js"><link rel="prefetch" href="/assets/js/36.b39ac46f.js"><link rel="prefetch" href="/assets/js/37.079d3de0.js"><link rel="prefetch" href="/assets/js/38.c929a6f2.js"><link rel="prefetch" href="/assets/js/39.7e72701b.js"><link rel="prefetch" href="/assets/js/4.2b3e3d8f.js"><link rel="prefetch" href="/assets/js/41.7345ca21.js"><link rel="prefetch" href="/assets/js/42.6decbb9a.js"><link rel="prefetch" href="/assets/js/43.bb8b125d.js"><link rel="prefetch" href="/assets/js/44.803b61cc.js"><link rel="prefetch" href="/assets/js/5.45c61f29.js"><link rel="prefetch" href="/assets/js/6.d4352767.js"><link rel="prefetch" href="/assets/js/7.955a46ff.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.764feb64.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人知识点记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link router-link-active">
+  tools相关
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link router-link-active">
+  tools相关
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/tools/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/tools/dependencies.html" class="sidebar-link">dependencies</a></li><li><a href="/tools/format.html" aria-current="page" class="active sidebar-link">多人项目代码格式化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/format.html#husky-与-lint-staged-和prettier-的使用" class="sidebar-link">husky 与 lint-staged 和prettier 的使用</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="多人项目代码格式化"><a href="#多人项目代码格式化" class="header-anchor">#</a> 多人项目代码格式化</h1> <h2 id="husky-与-lint-staged-和prettier-的使用"><a href="#husky-与-lint-staged-和prettier-的使用" class="header-anchor">#</a> husky 与 lint-staged 和prettier 的使用</h2> <p>多人开发时,不同人使用的编辑器缩进不同,代码风格不一致等等,导致提交的代码错乱无序,在有代码对比的场景下,非常影响对比视觉</p> <p>可以使用git hooks 提供的pre-commit,在提交前,把暂存区的内容进行format再提交,这样仓库的代码,就会保持同一个风格
+而git默认的hooks存在于.git/hooks文件夹,这个文件夹是不进行版本控制的,在本地生效的pre-commit无法提交被别的同事同步到
+因此使用husky工具,该库核心是修改git的core.hooksPath为项目中的.husky/_,而这个目录,每个同事都可以通过执行<code>husky</code>命令初始化得到</p> <p>在pre-commit中,就可以执行format相关指令了</p> <p>prettier只能格式化本地代码,无法格式化已经存入暂存区的代码,lint-staged就可以解决这个问题
+核心是:lint-staged可以针对暂存区的代码,使用特定指令格式化,然后把格式化以后的代码,提交至git,并且可以把格式化后的代码放回本地工作区,这样本地的该文件,也保持统一风格了</p> <blockquote><p>1 安装开发依赖</p></blockquote> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i <span class="token parameter variable">-D</span> husky lint-staged prettier
+
+<span class="token comment"># 完成后 执行如下命令</span>
+<span class="token comment">#1. 修改git的core.hooksPath</span>
+<span class="token comment">#2. 添加一个pre-commit hook文件</span>
+<span class="token comment">#3. package.json 的script中,会多一条 &quot;prepare&quot;: &quot;husky&quot;</span>
+npx husky init
+</code></pre></div><p><img src="/imgs/hooksPath.png" alt="husky初始前后,core.hooksPath变化">
+这个图里使用的是<code>npx husky</code>, 是初始化<code>.husky/_</code>目录的, <code>npx husky init</code> 除了初始化这个目录,还会在该目录同级下,自动创建一个<code>pre-commit</code>,也就是下面的第四步操作</p> <blockquote><p>2
+项目根目录创建prettier配置文件,简单设置了几个常用规则,我用的<code>.prettierrc.js</code>格式,方便写注释</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 语句末尾不加分号</span>
+  <span class="token literal-property property">semi</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 不使用tab缩进(但是tab键行为会替换为空格缩进,缩进数为tabWidth)</span>
+  <span class="token literal-property property">useTabs</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">tabWidth</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token comment">// 集合尾部逗号[1, 2, 3, 4,]=&gt;[1, 2, 3, 4]</span>
+  <span class="token literal-property property">trailingComma</span><span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 字符串使用单引号还是双引号,这里是使用单引号</span>
+  <span class="token literal-property property">singleQuote</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>prettier也可以设置忽略文件<code>.pretierignore</code>,用于忽略不需要格式化的文件/文件夹,如果项目有<code>.gitignore</code>,也会一并读取该文件配置内容</li></ul> <blockquote><p>3
+项目根目录新建lint-staged配置文件,添加格式化规则 <code>.lintstagedrc.json</code></p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;*.{js,ts,vue}&quot;</span><span class="token operator">:</span><span class="token string">&quot;prettier --write&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;*.{css,scss,less}&quot;</span><span class="token operator">:</span><span class="token string">&quot;prettier --write&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;*.{html,htm}&quot;</span><span class="token operator">:</span><span class="token string">&quot;prettier --write&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>注意: 这里的ts,vue,scss等前面,不要加空格,否则匹配不到该格式</li></ul> <blockquote><p>4
+<code>.husky</code>目录下,新建<code>pre-commit</code>文件,添加命令<code>npm run lint:staged</code>,该文件需要上传git,用于其他同事拉取</p></blockquote> <p>package.json 中配置这么两条指令</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;lint:staged&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>其中,prepare是执行完<code>npx husky init</code>以后,自动给添加的,如果没有就手动添加一下</p> <p>prepare是个特殊的npm钩子,在<code>npm install</code>(不带参数)命令执行完以后自动执行</p> <p>同事拉取到代码以后,如果不执行<code>npm install</code>,那么手动执行一下prepare指令,就可以正常使用了</p> <h3 id="总流程"><a href="#总流程" class="header-anchor">#</a> 总流程</h3> <p><img src="/imgs/pre-commit%E8%A7%A6%E5%8F%91%E6%B5%81%E7%A8%8B.png" alt="执行流程图"> <img src="/imgs/main.js%E6%8F%90%E4%BA%A4%E5%89%8D%E5%B7%A5%E4%BD%9C%E5%8C%BA.png" alt="main.js提交前工作区"> <img src="/imgs/main.js%E6%9A%82%E5%AD%98%E5%8C%BA%E5%86%85%E5%AE%B9.png" alt="main.js暂存区内容"> <img src="/imgs/main.js%E6%8F%90%E4%BA%A4%E5%90%8E%E5%B7%A5%E4%BD%9C%E5%8C%BA.png" alt="main.js提交后工作区"> <img src="/imgs/main.js%E6%8F%90%E4%BA%A4%E5%90%8Egit%E5%86%85%E5%AE%B9.png" alt="main.js提交后git内容"> <img src="/imgs/lint-staged%E6%97%A5%E5%BF%97.png" alt="lint-staged日志"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tools/dependencies.html" class="prev">
+        dependencies
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.bd818ee9.js" defer></script><script src="/assets/js/2.bdbd09e6.js" defer></script><script src="/assets/js/1.62172407.js" defer></script><script src="/assets/js/40.6c2d89b1.js" defer></script>
+  </body>
+</html>

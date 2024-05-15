@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTTP Method | 个人知识点记录</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.764feb64.css" as="style"><link rel="preload" href="/assets/js/app.bd818ee9.js" as="script"><link rel="preload" href="/assets/js/2.bdbd09e6.js" as="script"><link rel="preload" href="/assets/js/1.62172407.js" as="script"><link rel="preload" href="/assets/js/31.5bf8ebdc.js" as="script"><link rel="prefetch" href="/assets/js/10.aff4f391.js"><link rel="prefetch" href="/assets/js/11.982c24c9.js"><link rel="prefetch" href="/assets/js/12.82e9b697.js"><link rel="prefetch" href="/assets/js/13.73e86676.js"><link rel="prefetch" href="/assets/js/14.42991e2a.js"><link rel="prefetch" href="/assets/js/15.c6f8ea5e.js"><link rel="prefetch" href="/assets/js/16.e37df2a1.js"><link rel="prefetch" href="/assets/js/17.1678b209.js"><link rel="prefetch" href="/assets/js/18.87da4873.js"><link rel="prefetch" href="/assets/js/19.0741f0b9.js"><link rel="prefetch" href="/assets/js/20.2822dae5.js"><link rel="prefetch" href="/assets/js/21.60375cff.js"><link rel="prefetch" href="/assets/js/22.2aa7a141.js"><link rel="prefetch" href="/assets/js/23.d83ec41b.js"><link rel="prefetch" href="/assets/js/24.eafcc70f.js"><link rel="prefetch" href="/assets/js/25.3b72b2cf.js"><link rel="prefetch" href="/assets/js/26.7fe6088b.js"><link rel="prefetch" href="/assets/js/27.247bdb89.js"><link rel="prefetch" href="/assets/js/28.5bd5de60.js"><link rel="prefetch" href="/assets/js/29.1e7b15c5.js"><link rel="prefetch" href="/assets/js/3.e8eb28a6.js"><link rel="prefetch" href="/assets/js/30.36372d97.js"><link rel="prefetch" href="/assets/js/32.3681d741.js"><link rel="prefetch" href="/assets/js/33.a071a532.js"><link rel="prefetch" href="/assets/js/34.5771d7db.js"><link rel="prefetch" href="/assets/js/35.a6778671.js"><link rel="prefetch" href="/assets/js/36.b39ac46f.js"><link rel="prefetch" href="/assets/js/37.079d3de0.js"><link rel="prefetch" href="/assets/js/38.c929a6f2.js"><link rel="prefetch" href="/assets/js/39.7e72701b.js"><link rel="prefetch" href="/assets/js/4.2b3e3d8f.js"><link rel="prefetch" href="/assets/js/40.6c2d89b1.js"><link rel="prefetch" href="/assets/js/41.7345ca21.js"><link rel="prefetch" href="/assets/js/42.6decbb9a.js"><link rel="prefetch" href="/assets/js/43.bb8b125d.js"><link rel="prefetch" href="/assets/js/44.803b61cc.js"><link rel="prefetch" href="/assets/js/5.45c61f29.js"><link rel="prefetch" href="/assets/js/6.d4352767.js"><link rel="prefetch" href="/assets/js/7.955a46ff.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.764feb64.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人知识点记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/jss/" class="nav-link router-link-active">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/jss/" class="nav-link router-link-active">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/jss/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/jss/axios.html" class="sidebar-link">axios 使用细节</a></li><li><a href="/jss/http-method.html" aria-current="page" class="active sidebar-link">HTTP Method</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/jss/prototype.html" class="sidebar-link">原型和原型链</a></li><li><a href="/jss/task.html" class="sidebar-link">宏微任务</a></li><li><a href="/jss/this.html" class="sidebar-link">this指向问题</a></li><li><a href="/jss/generator.html" class="sidebar-link">很绕的生成器</a></li><li><a href="/jss/typeof.html" class="sidebar-link">typeof 与 instanceof</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http-method"><a href="#http-method" class="header-anchor">#</a> HTTP Method</h1> <h3 id="get"><a href="#get" class="header-anchor">#</a> get</h3> <p>因为不能指定请求体, 请求头里也就没有 content-type(表示请求体的编码类型)和 content-length(请求体的长度)字段
+参数以 a=b&amp;c=d 形式拼接在 url?后面,参数要进行 urlencoded 编码,因为服务器以&amp;作为分隔符来拆分参数,所以参数内容如有&amp;+%等要编码后才能传递</p> <p>get 常用于获取数据,不用于动作类操作</p> <h3 id="post"><a href="#post" class="header-anchor">#</a> post</h3> <p>多用于增删改等动作类操作
+content-type有三种</p> <ul><li><p>application/json</p> <p>请求体以 json 格式传递 常用于移动端与服务端交互</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  name:'haha',
+  age:18
+}
+</code></pre></div></li> <li><p>application/x-www-form-urlencoded</p> <p>文本类表单数据提交,参数和 get 请求的参数格式一致,只是作为请求体发送,不成为 url 后面拼接数据</p> <div class="language- extra-class"><pre class="language-text"><code>name=%E5%93%88%E5%93%88&amp;age=18
+</code></pre></div></li> <li><p>multipart/form-data</p> <p>带有文件上传的表单,content-type 后面会拼接一个 boundary,作为分割参数的分隔符</p> <div class="language- extra-class"><pre class="language-text"><code>Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryhWUszMbD5FLImHNb
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>------WebKitFormBoundaryhWUszMbD5FLImHNb
+Content-Disposition: form-data; name=&quot;age&quot;
+
+18
+------WebKitFormBoundaryhWUszMbD5FLImHNb
+Content-Disposition: form-data; name=&quot;filename&quot;; filename=&quot;deal_filename.py&quot;
+Content-Type: text/x-python-script
+
+
+------WebKitFormBoundaryhWUszMbD5FLImHNb--
+</code></pre></div><p>最后一行后面多了个 <code>--</code> 作为结束标志</p></li></ul> <h3 id="content-type-express配置"><a href="#content-type-express配置" class="header-anchor">#</a> content-type express配置</h3> <p>使用 express 做后台开发时,需要<code>中间件</code>处理特定 content-type</p> <ul><li>body-parser 配置处理application/json 和 application/x-www-form-urlencoded的数据</li> <li>multer 配置处理multipart/form-data 数据</li></ul> <p>如果纯文本表单的 enctype 设为了multipart/form-data,那么也需要配置 multer 中间件</p> <p>multer 一般用作特定路由的中间件,而不作为全局的中间件,毕竟上传文件的接口还是少的</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/jss/axios.html" class="prev">
+        axios 使用细节
+      </a></span> <span class="next"><a href="/jss/prototype.html">
+        原型和原型链
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.bd818ee9.js" defer></script><script src="/assets/js/2.bdbd09e6.js" defer></script><script src="/assets/js/1.62172407.js" defer></script><script src="/assets/js/31.5bf8ebdc.js" defer></script>
+  </body>
+</html>

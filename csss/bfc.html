@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BFC | 个人知识点记录</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.764feb64.css" as="style"><link rel="preload" href="/assets/js/app.bd818ee9.js" as="script"><link rel="preload" href="/assets/js/2.bdbd09e6.js" as="script"><link rel="preload" href="/assets/js/1.62172407.js" as="script"><link rel="preload" href="/assets/js/26.7fe6088b.js" as="script"><link rel="prefetch" href="/assets/js/10.aff4f391.js"><link rel="prefetch" href="/assets/js/11.982c24c9.js"><link rel="prefetch" href="/assets/js/12.82e9b697.js"><link rel="prefetch" href="/assets/js/13.73e86676.js"><link rel="prefetch" href="/assets/js/14.42991e2a.js"><link rel="prefetch" href="/assets/js/15.c6f8ea5e.js"><link rel="prefetch" href="/assets/js/16.e37df2a1.js"><link rel="prefetch" href="/assets/js/17.1678b209.js"><link rel="prefetch" href="/assets/js/18.87da4873.js"><link rel="prefetch" href="/assets/js/19.0741f0b9.js"><link rel="prefetch" href="/assets/js/20.2822dae5.js"><link rel="prefetch" href="/assets/js/21.60375cff.js"><link rel="prefetch" href="/assets/js/22.2aa7a141.js"><link rel="prefetch" href="/assets/js/23.d83ec41b.js"><link rel="prefetch" href="/assets/js/24.eafcc70f.js"><link rel="prefetch" href="/assets/js/25.3b72b2cf.js"><link rel="prefetch" href="/assets/js/27.247bdb89.js"><link rel="prefetch" href="/assets/js/28.5bd5de60.js"><link rel="prefetch" href="/assets/js/29.1e7b15c5.js"><link rel="prefetch" href="/assets/js/3.e8eb28a6.js"><link rel="prefetch" href="/assets/js/30.36372d97.js"><link rel="prefetch" href="/assets/js/31.5bf8ebdc.js"><link rel="prefetch" href="/assets/js/32.3681d741.js"><link rel="prefetch" href="/assets/js/33.a071a532.js"><link rel="prefetch" href="/assets/js/34.5771d7db.js"><link rel="prefetch" href="/assets/js/35.a6778671.js"><link rel="prefetch" href="/assets/js/36.b39ac46f.js"><link rel="prefetch" href="/assets/js/37.079d3de0.js"><link rel="prefetch" href="/assets/js/38.c929a6f2.js"><link rel="prefetch" href="/assets/js/39.7e72701b.js"><link rel="prefetch" href="/assets/js/4.2b3e3d8f.js"><link rel="prefetch" href="/assets/js/40.6c2d89b1.js"><link rel="prefetch" href="/assets/js/41.7345ca21.js"><link rel="prefetch" href="/assets/js/42.6decbb9a.js"><link rel="prefetch" href="/assets/js/43.bb8b125d.js"><link rel="prefetch" href="/assets/js/44.803b61cc.js"><link rel="prefetch" href="/assets/js/5.45c61f29.js"><link rel="prefetch" href="/assets/js/6.d4352767.js"><link rel="prefetch" href="/assets/js/7.955a46ff.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.764feb64.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人知识点记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link router-link-active">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link router-link-active">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/csss/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/csss/bfc.html" aria-current="page" class="active sidebar-link">BFC</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/csss/layout.html" class="sidebar-link">三列布局</a></li><li><a href="/csss/animation.html" class="sidebar-link">动画方案对比</a></li><li><a href="/csss/align.html" class="sidebar-link">水平垂直居中方案</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bfc"><a href="#bfc" class="header-anchor">#</a> BFC</h1> <h3 id="是什么"><a href="#是什么" class="header-anchor">#</a> 是什么?</h3> <p>html 中所有的元素,都运行在一种叫 formatting context(FC:格式化上下文)下,FC 又分为多个类型:</p> <p>inline formatting context</p> <p>block formatting context, 就是 BFC, 一个区域,作为 BFC 容器,其内部的元素有<code>自己的布局规则</code>,且布局规则不会影响到容器外部的其他元素</p> <p>但我依然无法明确<code>自己的布局规则</code>,到底说的啥玩意,网上的解答也没解开我的疑惑</p> <p>难道垂直方向上相邻元素的 margin 合并,就是规则么???</p> <h3 id="如何开启一个bfc"><a href="#如何开启一个bfc" class="header-anchor">#</a> 如何开启一个bfc</h3> <ol><li>文档元素 <code>html</code> 本身就已开启 bfc</li> <li>使用了 <code>float</code>,值为 非none 的元素</li> <li>使用了 <code>position</code>,且值为 <code>absolute</code>,<code>fixed</code>的元素</li> <li><code>display:inline-block</code> 元素</li> <li><code>flex items</code>, 前提是该子项没有再作为另一个 <code>flex</code>,<code>grid</code>,<code>table</code> 布局的容器</li> <li>其他的,我没验</li></ol> <p>使用了上面第 2、3条的元素,会隐式转为 inline-block 元素</p> <h3 id="我理解的-bfc-特性"><a href="#我理解的-bfc-特性" class="header-anchor">#</a> 我理解的 bfc 特性</h3> <h4 id="_1-margin-合并"><a href="#_1-margin-合并" class="header-anchor">#</a> 1. margin 合并</h4> <p>处于同一个BFC 容器下的相邻元素,他们之间的外边距会有一个合并效果,取两者间的大值</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- 期望 块 1 和块 2 之间的间距为 100 px,但因为 bfc 特性,他们中间只有 50px --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.container</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid red<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.a</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #888<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.b</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #aaa<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><img src="/imgs/bfc-1.png" alt="bfc合并现象"></p> <p>解决方法:</p> <ol><li>不解决, 开发中碰到这种情况,把真实间距(如 100px)设置在其中一个元素上</li> <li>把其中一个元素用 bfc 块再包一层,但这样增加了元素,不好</li></ol> <h4 id="_2-不会和浮动元素重叠"><a href="#_2-不会和浮动元素重叠" class="header-anchor">#</a> 2. 不会和浮动元素重叠</h4> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span><span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> lightblue</span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>我是一个左浮动的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span><span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> cyan</span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>我是一个右浮动的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span> background: #eee;<span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+    我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,
+    我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,
+    我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,我是中间内容体,<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><img src="/imgs/bfc-2.png" alt="浮动元素后面的元素会跑到浮动元素下面">
+灰色 div 会跑到两个浮动元素的下面,文本没被盖住是因为文本类(文本,带有inline 性质的元素)可以看到浮动元素</p> <p>给 id=container 的 div,添加 overflow:hidden,触发 bfc,bfc元素就可以<code>看得到</code>浮动元素,从而不跟他重叠
+<img src="/imgs/bfc-3.png" alt="开启 bfc 后">
+这个可以用于两列布局/三列布局</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/csss/" class="prev router-link-active">
+        介绍
+      </a></span> <span class="next"><a href="/csss/layout.html">
+        三列布局
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.bd818ee9.js" defer></script><script src="/assets/js/2.bdbd09e6.js" defer></script><script src="/assets/js/1.62172407.js" defer></script><script src="/assets/js/26.7fe6088b.js" defer></script>
+  </body>
+</html>

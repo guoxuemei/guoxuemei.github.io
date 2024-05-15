@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ref/reactive | 个人知识点记录</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.764feb64.css" as="style"><link rel="preload" href="/assets/js/app.bd818ee9.js" as="script"><link rel="preload" href="/assets/js/2.bdbd09e6.js" as="script"><link rel="preload" href="/assets/js/1.62172407.js" as="script"><link rel="preload" href="/assets/js/43.bb8b125d.js" as="script"><link rel="prefetch" href="/assets/js/10.aff4f391.js"><link rel="prefetch" href="/assets/js/11.982c24c9.js"><link rel="prefetch" href="/assets/js/12.82e9b697.js"><link rel="prefetch" href="/assets/js/13.73e86676.js"><link rel="prefetch" href="/assets/js/14.42991e2a.js"><link rel="prefetch" href="/assets/js/15.c6f8ea5e.js"><link rel="prefetch" href="/assets/js/16.e37df2a1.js"><link rel="prefetch" href="/assets/js/17.1678b209.js"><link rel="prefetch" href="/assets/js/18.87da4873.js"><link rel="prefetch" href="/assets/js/19.0741f0b9.js"><link rel="prefetch" href="/assets/js/20.2822dae5.js"><link rel="prefetch" href="/assets/js/21.60375cff.js"><link rel="prefetch" href="/assets/js/22.2aa7a141.js"><link rel="prefetch" href="/assets/js/23.d83ec41b.js"><link rel="prefetch" href="/assets/js/24.eafcc70f.js"><link rel="prefetch" href="/assets/js/25.3b72b2cf.js"><link rel="prefetch" href="/assets/js/26.7fe6088b.js"><link rel="prefetch" href="/assets/js/27.247bdb89.js"><link rel="prefetch" href="/assets/js/28.5bd5de60.js"><link rel="prefetch" href="/assets/js/29.1e7b15c5.js"><link rel="prefetch" href="/assets/js/3.e8eb28a6.js"><link rel="prefetch" href="/assets/js/30.36372d97.js"><link rel="prefetch" href="/assets/js/31.5bf8ebdc.js"><link rel="prefetch" href="/assets/js/32.3681d741.js"><link rel="prefetch" href="/assets/js/33.a071a532.js"><link rel="prefetch" href="/assets/js/34.5771d7db.js"><link rel="prefetch" href="/assets/js/35.a6778671.js"><link rel="prefetch" href="/assets/js/36.b39ac46f.js"><link rel="prefetch" href="/assets/js/37.079d3de0.js"><link rel="prefetch" href="/assets/js/38.c929a6f2.js"><link rel="prefetch" href="/assets/js/39.7e72701b.js"><link rel="prefetch" href="/assets/js/4.2b3e3d8f.js"><link rel="prefetch" href="/assets/js/40.6c2d89b1.js"><link rel="prefetch" href="/assets/js/41.7345ca21.js"><link rel="prefetch" href="/assets/js/42.6decbb9a.js"><link rel="prefetch" href="/assets/js/44.803b61cc.js"><link rel="prefetch" href="/assets/js/5.45c61f29.js"><link rel="prefetch" href="/assets/js/6.d4352767.js"><link rel="prefetch" href="/assets/js/7.955a46ff.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.764feb64.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人知识点记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link router-link-active">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/jss/" class="nav-link">
+  JS相关
+</a></div><div class="nav-item"><a href="/vues/" class="nav-link router-link-active">
+  Vue相关
+</a></div><div class="nav-item"><a href="/csss/" class="nav-link">
+  CSS相关
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  tools相关
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vues/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/vues/data-update.html" class="sidebar-link">vue2 视图不更新</a></li><li><a href="/vues/ref.html" aria-current="page" class="active sidebar-link">ref/reactive</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vues/vue2vs3.html" class="sidebar-link">Vue2 vs Vue3</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ref-reactive"><a href="#ref-reactive" class="header-anchor">#</a> ref/reactive</h1> <h3 id="vue3-的响应式基础"><a href="#vue3-的响应式基础" class="header-anchor">#</a> vue3 的响应式基础</h3> <p>因为 vue2 使用的 Object.defineProperty,在面对特定类型时具有缺陷(<a href="/vues/data-update.html">看这篇</a>)</p> <p>vue3 底层使用了 es6 中的 Proxy 来做数据劫持</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;哈哈&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> handlers <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">get</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">get </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> target<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">set</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">set </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    target<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> value
+    <span class="token keyword">return</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> proxyObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> handlers<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxyObj<span class="token punctuation">.</span>age<span class="token punctuation">)</span>
+proxyObj<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;嘿嘿&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxyObj<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+proxyObj<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">1.2</span>
+<span class="token comment">/**
+output:
+get age
+18
+set name:嘿嘿
+get name
+嘿嘿
+set height:1.2
+ */</span>
+</code></pre></div><p>直接给对象新增属性也能监测到了</p> <p>vue3 的 reactive 函数,底层就是使用了 proxy,返回代理对象</p> <h3 id="reactive-的局限"><a href="#reactive-的局限" class="header-anchor">#</a> reactive 的局限</h3> <ol><li>reactive 生成的响应式对象,如果使用了解构,会使解构出来的数据失去响应式</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">19</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span> age <span class="token punctuation">}</span> <span class="token operator">=</span> obj
+obj<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">20</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token comment">// 19</span>
+</code></pre></div><p>此外,reactive 对象的属性值传递给函数参数时,该值也失去响应式</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">callSomeFunction</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token comment">// 传递的就是个普通值</span>
+</code></pre></div><ol start="2"><li>Proxy 只能代理对象类型,基本数据类型无法进行代理,vue 又提供了 ref 方法,用来包装基本数据类型</li></ol> <p>RefImpl 伪代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">RefImpl</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> isObj <span class="token operator">=</span> <span class="token function">isObject</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isObj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>_value <span class="token operator">=</span> <span class="token function">toReactive</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>_value <span class="token operator">=</span> target
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">get</span> <span class="token function">value</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_value
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">set</span> <span class="token function">value</span><span class="token punctuation">(</span><span class="token parameter">newVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> isObj <span class="token operator">=</span> <span class="token function">isObject</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_value <span class="token operator">=</span> isObj <span class="token operator">?</span> <span class="token function">toReactive</span><span class="token punctuation">(</span>newVal<span class="token punctuation">)</span> <span class="token operator">:</span> newVal
+    <span class="token comment">// ...触发响应式</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用 ref 会生成一个 ref 对象, 里面包含了 value 的 getter 和 setter,这也是为什么要用.value 解包 ref 值的原因</p> <p>包装对象类型时,底层会调 reactive 方法,将数据值包装为一个 proxy 对象,保存在<code>_value</code> 中</p> <p>包装基本数据类型时,不做处理只保存在<code>_value</code>中</p> <h3 id="使用区别"><a href="#使用区别" class="header-anchor">#</a> 使用区别</h3> <p>基本数据类型只能使用 ref 包装</p> <p>对象类型可以用 ref,也可以用 reactive,建议是用 ref,</p> <p>逻辑代码使用 ref 时,需要使用<code>.value</code> 解包数据</p> <p>ref 自动解包的情况</p> <ul><li>顶层 ref 在模板中使用时 <code>const age = ref(18)</code></li> <li>ref 作为响应式对象的某个属性值时,在逻辑和模板中都会自动解包 <code>const obj = reactive({ age: ref(18) })</code></li></ul> <p>ref 作为响应式数组的元素或者作为普通对象的属性值时,在逻辑中都需要使用<code>.value</code>解包,在模板中,如果只读值,也有自动解包的效果,但是如果值参与其他运算,就得用<code>.value</code>解包</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> obj2 <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+
+arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment">//no</span>
+obj2<span class="token punctuation">.</span>age <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment">//no</span>
+arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment">//ok</span>
+obj2<span class="token punctuation">.</span>age<span class="token punctuation">.</span>value <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment">//ok</span>
+</code></pre></div><p>模板中</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{ arr[0] }} {{ obj2.age }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+也能够正确的读值
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{ arr[0] + 1 }} {{ obj2.age + 1 }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+就不行了,因为 typeof arr[0], typeof obj2.age 其实是object,还是要用.value解包
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vues/data-update.html" class="prev">
+        vue2 视图不更新
+      </a></span> <span class="next"><a href="/vues/vue2vs3.html">
+        Vue2 vs Vue3
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.bd818ee9.js" defer></script><script src="/assets/js/2.bdbd09e6.js" defer></script><script src="/assets/js/1.62172407.js" defer></script><script src="/assets/js/43.bb8b125d.js" defer></script>
+  </body>
+</html>
